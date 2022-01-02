@@ -3,6 +3,7 @@ import Feed from "./views/Feed";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from "./views/NotFound";
 import Layout from "./components/Layout";
+import Details from "./views/Details";
 
 function App() {
   return (
@@ -21,6 +22,14 @@ function App() {
           element={
             <Layout>
               <Feed />
+            </Layout>
+          }
+        />
+        <Route
+          path="/details"
+          element={
+            <Layout>
+              <Details />
             </Layout>
           }
         />
