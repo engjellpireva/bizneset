@@ -10,7 +10,7 @@ export default function Navbar(props) {
 
   return (
     <>
-      <div className="bg-stone-900 p-6 text-white fixed w-full">
+      <div className="bg-stone-900 p-6 text-white fixed w-full z-20">
         <div className="container md:mx-auto md:px-32 px-5 md:flex justify-between">
           <span className="flex justify-between">
             <Link to="/">
@@ -37,8 +37,8 @@ export default function Navbar(props) {
           >
             <NavLink name="Ballina" link="/" />
             <NavLink name="Bizneset" link="/feed" />
-            <NavLink name="Rreth Nesh" link="/about" />
-            <NavLink name="Shërbimet" link="/services" />
+            <NavLink name="Rreth Nesh" link="#about" />
+            <NavLink name="Shërbimet" link="#services" />
           </ul>
         </div>
       </div>
