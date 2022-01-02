@@ -1,7 +1,6 @@
 import React from "react";
 import Background from "../assets/images/background.jpg";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
 import {
   BsFillLightningChargeFill,
   BsFillPatchQuestionFill,
@@ -53,35 +52,35 @@ export default function Home() {
   return (
     <div>
       <section
-        className="md:flex justify-center h-screen flex-col bg-stone-600"
+        className="flex-col justify-center h-screen md:flex bg-stone-600"
         style={{ backgroundImage: `url(${Background})` }}
       >
-        <div className="container mx-auto md:px-32 px-5 pt-64 md:pt-0">
-          <h1 className="text-4xl text-white pt-5 font-bold uppercase">
+        <div className="container px-5 pt-64 mx-auto md:px-32 md:pt-0">
+          <h1 className="pt-5 text-4xl font-bold text-white uppercase">
             Reklamoni biznesin tuaj
           </h1>
-          <p className="text-md text-gray-300 font-bold mt-3">
+          <p className="mt-3 font-bold text-gray-300 text-md">
             Mundësi reklamimi në Kosovë, Shqipëri dhe Maqedoni.
           </p>
           <Link to="/feed">
             <button
               type="button"
-              className="bg-gray-900 p-3 text-white mt-2 uppercase font-bold w-full md:w-1/6 mt-5 rounded-md shadow-lg"
+              className="w-full p-3 mt-2 mt-5 font-bold text-white uppercase bg-gray-900 rounded-md shadow-lg md:w-1/6"
             >
               Fillo Tani
             </button>
           </Link>
         </div>
       </section>
-      <section className="bg-gray-100 py-20" id="about">
-        <div className="container mx-auto md:px-32 px-5 text-gray-800">
+      <section className="py-20 bg-gray-100" id="about">
+        <div className="container px-5 mx-auto text-gray-800 md:px-32">
           <div className="py-12">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="lg:text-center">
-                <h2 className="text-base text-cyan-600 font-semibold tracking-wide uppercase">
+                <h2 className="text-base font-semibold tracking-wide uppercase text-cyan-600">
                   Rreth Nesh
                 </h2>
-                <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
                   Pyetje dhe përgjigje rreth "Bizneset"
                 </p>
               </div>
@@ -91,10 +90,10 @@ export default function Home() {
                 {questions.map((question) => (
                   <div key={question.name} className="relative">
                     <dt>
-                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-cyan-500 text-white">
-                        <question.icon className="h-6 w-6" aria-hidden="true" />
+                      <div className="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-cyan-500">
+                        <question.icon className="w-6 h-6" aria-hidden="true" />
                       </div>
-                      <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
+                      <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
                         {question.name}
                       </p>
                     </dt>
@@ -108,15 +107,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-white py-20" id="services">
-        <div className="container mx-auto md:px-32 px-5 text-gray-800">
+      <section className="py-20 bg-white" id="services">
+        <div className="container px-5 mx-auto text-gray-800 md:px-32">
           <div className="py-12 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="lg:text-center">
-                <h2 className="text-base text-cyan-600 font-semibold tracking-wide uppercase">
+                <h2 className="text-base font-semibold tracking-wide uppercase text-cyan-600">
                   Shërbimet
                 </h2>
-                <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
                   Të gjitha shërbimet që "Bizneset" ofron
                 </p>
               </div>
@@ -126,13 +125,13 @@ export default function Home() {
                   {features.map((feature) => (
                     <div key={feature.name} className="relative">
                       <dt>
-                        <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-cyan-500 text-white">
+                        <div className="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-cyan-500">
                           <feature.icon
-                            className="h-6 w-6"
+                            className="w-6 h-6"
                             aria-hidden="true"
                           />
                         </div>
-                        <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
+                        <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
                           {feature.name}
                         </p>
                       </dt>
@@ -147,7 +146,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

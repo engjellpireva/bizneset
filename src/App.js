@@ -1,30 +1,30 @@
 import Home from "./views/Home";
 import Feed from "./views/Feed";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import NotFound from "./views/NotFound";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="*" element={<NotFound />} />
         <Route
           path="/"
           element={
-            <Navbar>
+            <Layout>
               <Home />
-            </Navbar>
+            </Layout>
           }
         />
         <Route
           path="/feed"
           element={
-            <Navbar>
+            <Layout>
               <Feed />
-            </Navbar>
+            </Layout>
           }
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
