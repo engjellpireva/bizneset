@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from "./views/NotFound";
 import Layout from "./components/Layout";
 import Details from "./views/Details";
+import NewBusiness from "./views/NewBusiness";
 
 function App() {
   return (
@@ -30,6 +31,14 @@ function App() {
           element={
             <Layout>
               <Details />
+            </Layout>
+          }
+        />
+        <Route
+          path="/newbusiness"
+          element={
+            <Layout>
+              <NewBusiness />
             </Layout>
           }
         />

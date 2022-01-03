@@ -110,7 +110,7 @@ export default function Home() {
       <section className="py-20 bg-white" id="services">
         <div className="container px-5 mx-auto text-gray-800 md:px-32">
           <div className="py-12 bg-white">
-            <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div className="px-4 mx-auto max-w-7xl">
               <div className="lg:text-center">
                 <h2 className="text-base font-semibold tracking-wide uppercase text-cyan-600">
                   Shërbimet

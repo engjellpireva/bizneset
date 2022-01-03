@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <div className="flex h-screen justify-center items-center">
       <div className="md:flex md:space-x-3 my-auto">
-        <h1 className="text-indigo-600 text-6xl font-bold md:px-2 border-b-2 py-2 md:py-0 md:border-none">
+        <h1 className="text-cyan-900 text-6xl font-bold md:px-2 border-b-2 py-2 md:py-0 md:border-none">
           404
         </h1>
         <span className="hidden md:block border-r-2"></span>
@@ -16,7 +16,7 @@ export default function NotFound() {
           <a href="/">
             <button
               type="button"
-              className="bg-indigo-600 p-2 rounded-lg mt-5 text-white"
+              className="bg-cyan-900 p-2 rounded-lg mt-5 text-white"
             >
               Kthehu tek Ballina
             </button>
