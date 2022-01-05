@@ -5,15 +5,15 @@ import { MdLocationOn } from "react-icons/md";
 
 export default function Feed() {
   return (
-    <div className="bg-gray-100 py-5">
+    <div className="dark:bg-zinc-900 bg-gray-200 py-5">
       <div className="container px-5 mx-auto md:px-32 pt-36 md:pt-32">
-        <h1 className="p-2 text-sm text-white uppercase bg-zinc-800">
+        <h1 className="p-2 text-sm text-white uppercase dark:bg-neutral-700 bg-zinc-800">
           Bizneset <strong>Premium</strong>
         </h1>
         <div className="grid grid-cols-1 gap-4 mt-5 md:grid-cols-4">
-          <div className="text-white bg-gray-900 border shadow-lg">
+          <div className="text-white dark:bg-neutral-800 bg-gray-900 dark:border-neutral-600 border shadow-lg">
             <img src={Logo} alt="Shell" className="object-cover w-full h-64" />
-            <span className="flex justify-between p-2 border-t border-b">
+            <span className="flex justify-between p-2 dark:border-neutral-600 border-t border-b">
               <p className="truncate">ReklamimiReklamimiReklamimiReklamimi</p>
               <span className="flex">
                 <MdLocationOn className="my-auto" />

@@ -4,9 +4,9 @@ import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <div>
-      <footer className="pt-5 p-5 bg-zinc-900">
-        <div className="container mx-auto md:px-32 px-5 text-white">
+    <div className="">
+      <footer className="pt-5 p-5 bg-neutral-100 dark:bg-neutral-900">
+        <div className="container mx-auto md:px-32 px-5 text-black dark:text-white">
           <div className="space-y-4 md:space-y-0 md:flex justify-between">
             <span>
               <img src={Logo} alt="Logo" className="w-20 cursor-pointer" />
@@ -41,23 +41,23 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div className="bg-zinc-800 p-5 py-10">
-        <div className="container mx-auto md:px-32 px-5 text-white">
+      <div className="bg-neutral-300 dark:bg-neutral-800 p-5 py-10">
+        <div className="container mx-auto md:px-32 px-5 text-black dark:text-white">
           <h1 className="font-extrabold leading-6 tracking-tight sm:text-2xl">
             Dëshironi që të njoftoheni për biznese të reja?
           </h1>
-          <h1 className="font-semibold leading-6 tracking-tight text-gray-200 sm:text-md">
+          <h1 className="font-semibold leading-6 tracking-tight text-gray-600 dark:text-gray-200 sm:text-md">
             Abonohuni duke shënuar e-mail adresen tuaj më poshtë.
           </h1>
           <span>
             <input
               type="text"
-              className="mt-2 p-2 md:w-2/6 bg-zinc-900 outline-none"
+              className="mt-2 p-2 md:w-2/6 bg-neutral-100 dark:bg-neutral-900 outline-none"
               placeholder="E-Mail Adresa juaj"
             />
             <button
               type="button"
-              className="p-2 bg-zinc-600 hover:bg-zinc-700 transition duration-500 ease-in-out"
+              className="p-2 bg-neutral-400 text-white hover:bg-neutral-700 dark:bg-neutral-600 transition duration-500 ease-in-out"
             >
               Abonohu
             </button>

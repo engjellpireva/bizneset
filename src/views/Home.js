@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <div>
       <section
-        className="flex-col justify-center h-screen md:flex bg-stone-600"
+        className="flex-col justify-center h-screen md:flex"
         style={{ backgroundImage: `url(${Background})` }}
       >
         <div className="container px-5 pt-64 mx-auto md:px-32 md:pt-0">
@@ -72,15 +72,15 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section className="py-20 bg-gray-100" id="about">
-        <div className="container px-5 mx-auto text-gray-800 md:px-32">
+      <section className="py-20 dark:bg-zinc-900 bg-gray-100" id="about">
+        <div className="container px-5 mx-auto dark:text-white text-gray-800 md:px-32">
           <div className="py-12">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="lg:text-center">
-                <h2 className="text-base font-semibold tracking-wide uppercase text-cyan-600">
+                <h2 className="text-base font-semibold tracking-wide uppercase dark:text-indigo-600 text-cyan-600">
                   Rreth Nesh
                 </h2>
-                <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+                <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight dark:text-gray-100 text-gray-900 sm:text-4xl">
                   Pyetje dhe përgjigje rreth "Bizneset"
                 </p>
               </div>
@@ -90,10 +90,10 @@ export default function Home() {
                 {questions.map((question) => (
                   <div key={question.name} className="relative">
                     <dt>
-                      <div className="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-cyan-500">
+                      <div className="absolute flex items-center justify-center w-12 h-12 text-white rounded-md dark:bg-indigo-500 bg-cyan-500">
                         <question.icon className="w-6 h-6" aria-hidden="true" />
                       </div>
-                      <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
+                      <p className="ml-16 text-lg font-medium leading-6 dark:text-gray-100 text-gray-900">
                         {question.name}
                       </p>
                     </dt>
@@ -107,15 +107,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-white" id="services">
-        <div className="container px-5 mx-auto text-gray-800 md:px-32">
-          <div className="py-12 bg-white">
+      <section className="py-20 dark:bg-zinc-800 bg-white" id="services">
+        <div className="container px-5 mx-auto dark:text-gray-100 text-gray-800 md:px-32">
+          <div className="py-12 dark:bg-zinc-800 bg-white">
             <div className="px-4 mx-auto max-w-7xl">
               <div className="lg:text-center">
-                <h2 className="text-base font-semibold tracking-wide uppercase text-cyan-600">
+                <h2 className="text-base font-semibold tracking-wide uppercase dark:text-indigo-600 text-cyan-600">
                   Shërbimet
                 </h2>
-                <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+                <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight dark:text-gray-100 text-gray-900 sm:text-4xl">
                   Të gjitha shërbimet që "Bizneset" ofron
                 </p>
               </div>
@@ -125,13 +125,13 @@ export default function Home() {
                   {features.map((feature) => (
                     <div key={feature.name} className="relative">
                       <dt>
-                        <div className="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-cyan-500">
+                        <div className="absolute flex items-center justify-center w-12 h-12 text-white rounded-md dark:bg-indigo-500 bg-cyan-500">
                           <feature.icon
                             className="w-6 h-6"
                             aria-hidden="true"
                           />
                         </div>
-                        <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
+                        <p className="ml-16 text-lg font-medium leading-6 dark:text-gray-100 text-gray-900">
                           {feature.name}
                         </p>
                       </dt>
